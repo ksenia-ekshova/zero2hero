@@ -3,6 +3,7 @@
 # Реализованные подзадачи
 - создана собственная NFT коллекция с уникальными изображениями, с использованием библиотек OpenZeppelin
 - ссылка на opensea коллекции (заминчены 4 NFT из 5) https://testnets.opensea.io/collection/pixelcats-6 
+- ссылка на транзакцию https://testnet.bscscan.com/token/0xB1E341E2BBbc234DDb0CF1d666841b491b959016
 - написаны тесты, coverage report приведен ниже
 - в файле `utility` потенциальное ютилити NFT коллекции
 - в папке `scripts` находятся скрипты для деплоя
