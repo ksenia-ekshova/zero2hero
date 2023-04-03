@@ -1,0 +1,18 @@
+{
+  "name": "nft-collection",
+  "version": "1.0.0",
+  "description": "Pixel cats NFT collection",
+  "main": "index.js",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.5",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.6",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.7.22"
+  }
+}
