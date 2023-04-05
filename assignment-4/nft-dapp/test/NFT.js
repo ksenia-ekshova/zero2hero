@@ -7,7 +7,7 @@ describe("NFT", function () {
   let NFT;
   let nft;
 
-  const BaseURI = "ipfs://QmVsqkH7KmsRg8tyFp7Dv31VSjA1iNLWPSMkeSz22igiN1/";
+  const BaseURI = "ipfs://QmdG1xN5mhii2qF9n1AoXpXd1UxxhGMZYgXJo6VGnq5LWi/";
 
   beforeEach(async () => {
     NFT = await ethers.getContractFactory("NFT");

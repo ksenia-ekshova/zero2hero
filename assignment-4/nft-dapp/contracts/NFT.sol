@@ -15,7 +15,7 @@ contract NFT is ERC721Enumerable, Ownable {
 
     uint256 maxSupply = 5;//максимально число NFT, которое у нас может быть
     uint256 cost = 0.001 ether; //0.001 BNB - цена NFT
-    string baseURI = "ipfs://QmVsqkH7KmsRg8tyFp7Dv31VSjA1iNLWPSMkeSz22igiN1/"; 
+    string baseURI = "ipfs://QmdG1xN5mhii2qF9n1AoXpXd1UxxhGMZYgXJo6VGnq5LWi/"; 
 
     //NFT storage
 
