@@ -1,0 +1,15 @@
+{
+    "description": "My Pixel Cats", 
+    "image": "ipfs://Qma4VkfJTGfM2kZWJ2wW5mj5vwWMDwHysbwpZT3LTWJjVP/3.png", 
+    "name": "Pixel Cat 3",
+    "attributes": [
+    {
+        "trait_type": "Base", 
+        "value": "High"
+    },  
+    {
+        "trait_type": "Level", 
+        "value": 5
+    }]
+
+}

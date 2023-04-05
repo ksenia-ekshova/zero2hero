@@ -24,7 +24,7 @@ describe("NFT", function () {
   })
 
   it("Should return the correct name and symbol", async function () {
-    assert.equal(await nft.name(), "PixelCats");
+    assert.equal(await nft.name(), "Pixel Cats");
     assert.equal(await nft.symbol(), "PXLC");
   })
 

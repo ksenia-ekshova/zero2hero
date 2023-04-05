@@ -23,7 +23,7 @@ contract NFT is ERC721Enumerable, Ownable {
     //central server (cloudinary, file storage, firestore, github)
     //IPFS (decentralized file storage), arweave.
 
-    constructor() ERC721("PixelCats", "PXLC") {}
+    constructor() ERC721("Pixel Cats", "PXLC") {}
     //нужно вызвать конструктор с ERC721
     //ON-CHAIN DATA
     //EVENT
