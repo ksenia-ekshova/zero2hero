@@ -7,8 +7,8 @@ contract Transmitter is Ownable {
     uint public roundCounter;
     uint public currentRound;
     address public sequencer;
-    address[] public signers;
-    address[] public submittedSigners;
+    address[] private signers;
+    address[] private submittedSigners;
     uint private constant MAX_PRICE_DIFF_PERCENT = 1;
     uint private constant MIN_NODES = 2;
     uint private savedPrice = 0;
