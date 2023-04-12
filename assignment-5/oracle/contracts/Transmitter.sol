@@ -7,6 +7,7 @@ contract Transmitter is Ownable {
     uint public roundCounter;
     uint public currentRound;
     address public sequencer;
+    address[] public authorizedNodes;
     address[] private signers;
     address[] private submittedSigners;
     uint private constant MAX_PRICE_DIFF_PERCENT = 1;
@@ -55,6 +56,8 @@ contract Transmitter is Ownable {
         bytes32 payloadHash = keccak256(abi.encode(currentRound, timestamp, price));
         bytes32 messageHash = keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", payloadHash));
         address signer = ecrecover(messageHash, v, r, s);
+
+        require(chechNodeIsAuthorized(signer) == true,"Oracle is not authorized to submit prices");
 
         signers.push(signer);
         dataByNode[signer].timestamp = timestamp;
@@ -125,6 +128,31 @@ contract Transmitter is Ownable {
 
     function setSavedPrice(uint _savedPrice) public onlyOwner {
         savedPrice = _savedPrice;
+    }
+
+    function setAuthorizedNodes(address node) public onlyOwner {
+        authorizedNodes.push(node);
+    }
+
+
+    function deleteNodeFromAuthorized(address node) public onlyOwner {
+    for (uint i = 0; i < authorizedNodes.length; i++) {
+        if (authorizedNodes[i] == node) {
+            signers[i] = signers[signers.length - 1];
+            signers.pop();
+            break;
+        }
+    }
+    }
+
+    function chechNodeIsAuthorized(address node) public view returns (bool) {
+        for (uint i = 0; i < authorizedNodes.length; i++) {
+            if (authorizedNodes[i] == node) {
+                return true;
+                //придумать аналог break?
+            }
+        }
+        return false;
     }
 
     function clearData() internal {
