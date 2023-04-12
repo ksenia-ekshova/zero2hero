@@ -7,12 +7,12 @@ contract Transmitter is Ownable {
     uint public roundCounter;
     uint public currentRound;
     address public sequencer;
-    address[] public authorizedNodes;
+    address[] public authorizedNodes;//at first - set authorized Nodes with setAuthorizedNodes function
     address[] private signers;
     address[] private submittedSigners;
     uint private constant MAX_PRICE_DIFF_PERCENT = 1;
     uint private constant MIN_NODES = 2;
-    uint private savedPrice = 0;
+    uint private savedPrice = 0;//set initial price with setSavedPrice function
     uint private startRoundTimestamp;
     uint private endRoundTimestamp;
     uint private submittedDataByNodeCount;
@@ -149,7 +149,6 @@ contract Transmitter is Ownable {
         for (uint i = 0; i < authorizedNodes.length; i++) {
             if (authorizedNodes[i] == node) {
                 return true;
-                //придумать аналог break?
             }
         }
         return false;
