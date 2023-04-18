@@ -17,6 +17,9 @@ contract Transmitter is Ownable {
     uint private endRoundTimestamp;
     uint private submittedDataByNodeCount;
 
+    TODO: заменить проверки в функциях на require, для экономии газа
+    TODO: использовать mapping вместо массивов для хранения данных
+
     struct Data {
         uint price;
         uint timestamp;
@@ -162,6 +165,12 @@ contract Transmitter is Ownable {
         delete signers;
         submittedDataByNodeCount = 0;
     }
+}
+
+//getter for price
+function roundResult() public returns (uint, uint) {
+    emit getPrice (roundCounter, savedPrice, "Round and price");
+    return (roundCounter, savedPrice);
 }
 
 

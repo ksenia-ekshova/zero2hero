@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> <!-- Подключаем JavaScript-файл -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Сюда вставляем следующий HTML элемент -->
+    <body>
+        <div>
+            <h1>My Token</h1>
+            <p>You can transfer Tokens and get balance</p> 
+            <br /> 
+            <label for="note"> Add adress and amount for transfer Tokens:</label> 
+            <br/>
+            <input type="text" placeholder="target adress" id = "note"/>
+            <input type="number" placeholder="amount of tokens" id = "amount"/>
+            <button onclick="transferToken()">Transfer Tokens</button>
+            <button onclick="balance()">Balance</button>
+            <p>balance: <span id = "result"></span></p>
+        </div>
+    </body>
+</body>
+
+</html>

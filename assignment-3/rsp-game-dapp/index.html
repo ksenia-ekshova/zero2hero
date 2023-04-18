@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> 
+</head>
+<body>
+   <header>
+    <h1>Rock Paper Scissors</h1>
+   </header> 
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result" id="result">
+        
+    </div>
+
+    <label for="bet"  class="center"> Place your bet (min 0.0001):</label> 
+        <br/>
+        <input type="text" id = "bet" class="center"/>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock.png" alt="">
+        </div>
+
+          <div class="choice" id="p">
+            <img src="images/paper.png" alt="">
+        </div>
+
+        <div class="choice" id="s">
+            <img src="images/scissors.png" alt="">
+        </div>
+
+    </div>
+
+    <label for="resultLog"  class="center"> Result Log (last game):</label> 
+        <br/>
+    <textarea name="resultLog" id="resultLog"  class="center" cols="40" rows="5" disabled></textarea>
+
+    <script src="script.js" charset='UTF-8'></script>
+
+</body>
+</html>

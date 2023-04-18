@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> <!-- Подключаем JavaScript-файл -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Сюда вставляем следующий HTML элемент -->
+    <body>
+        <div>
+            <h1>Note dApp</h1>
+            <p>you can write notes and read notes from smart-contract</p> 
+            <br /> 
+            <label for="note"> Write note:</label> 
+            <br/>
+            <input type="text" id = "note"/>
+            <button onclick="setNote()">Set Note</button>
+            <button onclick="getNote()">Get Note</button>
+            <p>my note: <span id = "result"></span></p>
+        </div>
+    </body>
+</body>
+
+</html>

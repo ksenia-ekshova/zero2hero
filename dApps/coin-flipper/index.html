@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Flipper</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>My Coin Flipper dApp</h1>
+        <input type="text" id = "bet" placeholder = "Place your bet: 0.0001 or more" class="center"/>
+      <button onclick="play(0)">Head</button>
+      <button onclick="play(1)">Tail</button>
+      <button onclick="getGamePlayed()">Get result</button>
+      <p>Your result: <span id="result"></span></p>
+    </div>
+  </body>
+</html>
