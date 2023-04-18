@@ -2,7 +2,7 @@
 
 # Реализованные подзадачи
 - создана собственная NFT коллекция с уникальными изображениями, с использованием библиотек OpenZeppelin
-- ссфлка на landing https://frontbootcamp.vercel.app 
+- ссылка на landing https://frontbootcamp.vercel.app 
 - ссылка на opensea коллекции (заминчены 4 NFT из 5) https://testnets.opensea.io/collection/pixelcats-6 
 - ссылка на транзакцию https://testnet.bscscan.com/token/0xB1E341E2BBbc234DDb0CF1d666841b491b959016
 - для второго задания коллекция была обновлена (изменены названия коллекции и NFT), контракт задеплоен повторно https://testnets.opensea.io/collection/pixel-cats
