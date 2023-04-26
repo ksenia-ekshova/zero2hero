@@ -1,0 +1,13 @@
+{
+    "description": "Collection of pixel pictures with cats looking out the window at the autumn sunset", 
+    "image": "ipfs://QmPWJkduQ8RtxdDYxnuLc5xxTmn7MEngF7Dw6jzGt2jYCV/0.png", 
+    "name": "Pixel Cat 4 looking at the autumn sunset",
+    "attributes": 
+    {
+        "trait_type": "Base", 
+        "value": "High",
+        "type": "image",
+        "company": "My Pixel",
+        "date": "2023-04-26"
+    }
+}
